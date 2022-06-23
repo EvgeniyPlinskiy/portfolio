@@ -27,9 +27,9 @@ class MenuSeeder extends Seeder
             'route' => '/widgets',
         ]);
         $menu = Menu::firstOrCreate([
-            'title' => 'Message',
-            'icon' => 'chatbubble-outline',
-            'route' => '/new',
+            'title' => 'Forms',
+            'icon' => 'id-card-outline',
+            'route' => '/forms',
         ]);
         $menu = Menu::firstOrCreate([
             'title' => 'Help',

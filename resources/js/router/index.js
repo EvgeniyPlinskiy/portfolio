@@ -16,10 +16,10 @@ const routes = [
     component: () => import('../components/widgets/Widgets.vue')
   },
   {
-    path: '/create',
-    name: 'second',
-    meta: {layout: 'SecondLayout'},
-    component: () => import('../components/second/Index.vue')
+    path: '/forms',
+    name: 'forms',
+    meta: {layout: 'MainLayout'},
+    component: () => import('../components/forms/Forms.vue')
   },
   {
     path: '/new',
