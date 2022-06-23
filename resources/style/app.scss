@@ -1,0 +1,19 @@
+@import './variables.scss';
+@import './main/style.scss';
+@import './widgets/style.scss';
+@import './second/style.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.container {
+  position: relative;
+  width: 100%;
+}

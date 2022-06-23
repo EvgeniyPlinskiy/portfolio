@@ -1,0 +1,133 @@
+.details {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 30px;
+  margin-top: 10px;
+}
+.details .recentOrders {
+  position: relative;
+  display: grid;
+  min-height: 100px;
+  background: $secondary;
+  padding: 20px;
+  box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+  border-radius: 20px;
+}
+.cardHeader {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.cardHeader h2 {
+  font-weight: 600;
+  color: $primary;
+}
+.btn {
+  position: relative;
+  padding: 5px 10px;
+  background: $primary;
+  text-decoration: none;
+  color: $secondary;
+  border-radius: 6px;
+}
+.details table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+
+}
+.details table thead td {
+  font-weight: 600;
+}
+.details table tr {
+  color: $black1;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.details table tr:last-child {
+  border-bottom: none;
+}
+.details table tbody tr:hover {
+  color: $secondary;
+  background: $primary;
+}
+.details table tr td {
+  padding: 10px;
+}
+.details table tr td:last-child {
+  text-align: end;
+}
+.details table tr td:nth-child(2) {
+  text-align: end;
+}
+.details table tr td:nth-child(3) {
+  text-align: center;
+}
+.status {
+  padding: 2px 4px;
+  color: $secondary;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.status.delivered {
+  background: $successClr;
+}
+.status.pending {
+  background: $preventionClr;
+}
+.status.return {
+  background: $dangerClr;
+}
+.status.inProgress {
+  background: $progressClr;
+}
+
+/* Table left */
+.recentCustomers {
+  position: relative;
+  display: grid;
+  min-height: 500px;
+  padding: 20px;
+  background: $secondary;
+  box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+  border-radius: 20px;
+}
+.recentCustomers .imgBox {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.recentCustomers .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.recentCustomers table tr:hover {
+  background: $primary;
+  color: $secondary;
+}
+.recentCustomers table tr td {
+  padding: 12px 10px;
+  text-align: start;
+}
+.recentCustomers table tr td h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+.recentCustomers table tr td h4 span {
+  font-size: 14px;
+  color: $black2;
+}
+.recentCustomers table tr:hover td h4 span {
+  color: $secondary;
+}

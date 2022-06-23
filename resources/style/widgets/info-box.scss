@@ -1,0 +1,390 @@
+.info-box-title {
+  width: 100%;
+  color: $primary;
+  font-weight: 500;
+  padding-left: 30px;
+}
+
+.info-box-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+
+
+
+  .info-box-main {
+    position: relative;
+    background: $primary;
+    padding: 30px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 10px;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+
+    &:hover {
+      background: $secondary;
+
+      .info-box-card-title {
+        color: $primary;
+      }
+
+      .info-box-icon ion-icon {
+        color: $primary;
+      }
+
+      .info-box-numbers {
+        color: $primary;
+      }
+
+      .progressbar {
+        background: $primary;
+        border: 2px solid $primary;
+      }
+
+      .progressbar>span {
+        background-color: $secondary;
+      }
+
+      .info-box-card-text {
+        color: $primary;
+      }
+    }
+
+    .info-box-icon {
+      justify-content: center;
+      align-items: center;
+
+
+      ion-icon {
+        font-size: 30px;
+        color: $secondary;
+      }
+    }
+
+    .info-box-card-title {
+      color: $secondary;
+    }
+
+    .info-box-numbers {
+      font-size: 1rem;
+      color: $secondary;
+    }
+
+    .progressbar {
+      height: 10px;
+      position: relative;
+      background: $secondary;
+      border-radius: 3px;
+      border: 2px solid $secondary;
+      padding: 0;
+      margin-top: 10px;
+
+    }
+
+    .progressbar>span {
+      display: block;
+      height: 100%;
+      background-color: $primary;
+      position: relative;
+      overflow: hidden;
+      border-radius: 3px;
+    }
+
+    .info-box-card-text {
+      margin-top: 10px;
+      font-size: 0.7rem;
+      color: $secondary;
+    }
+
+
+  }
+
+  .info-box-success {
+    position: relative;
+    background: $successClr;
+    padding: 30px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 10px;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+
+    &:hover {
+      background: $secondary;
+
+      .info-box-card-title {
+        color: $successClr;
+      }
+
+      .info-box-icon ion-icon {
+        color: $successClr;
+      }
+
+      .info-box-numbers {
+        color: $successClr;
+      }
+
+      .progressbar {
+        background: $successClr;
+        border: 2px solid $successClr;
+      }
+
+      .progressbar>span {
+        background-color: $secondary;
+      }
+
+      .info-box-card-text {
+        color: $successClr;
+      }
+    }
+    .info-box-icon {
+      justify-content: center;
+      align-items: center;
+
+      ion-icon {
+        font-size: 30px;
+        color: $secondary;
+      }
+    }
+
+    .info-box-card-title {
+      color: $secondary;
+    }
+
+    .info-box-numbers {
+      font-size: 1rem;
+      color: $secondary;
+    }
+
+    .progressbar {
+      height: 10px;
+      position: relative;
+      background: $secondary;
+      border-radius: 3px;
+      border: 2px solid $secondary;
+      padding: 0;
+      margin-top: 10px;
+
+    }
+
+    .progressbar>span {
+      display: block;
+      height: 100%;
+      background-color: $successClr;
+      position: relative;
+      overflow: hidden;
+      border-radius: 3px;
+    }
+
+    .info-box-card-text {
+      margin-top: 10px;
+      font-size: 0.7rem;
+      color: $secondary;
+    }
+  }
+
+  .info-box-prevention {
+    position: relative;
+    background: $preventionClr;
+    padding: 30px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 10px;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+
+    &:hover {
+      background: $secondary;
+
+      .info-box-card-title {
+        color: $preventionClr;
+      }
+
+      .info-box-icon ion-icon {
+        color: $preventionClr;
+      }
+
+      .info-box-numbers {
+        color: $preventionClr;
+      }
+
+      .progressbar {
+        background: $preventionClr;
+        border: 2px solid $preventionClr;
+      }
+
+      .progressbar>span {
+        background-color: $secondary;
+      }
+
+      .info-box-card-text {
+        color: $preventionClr;
+      }
+    }
+    .info-box-icon {
+      justify-content: center;
+      align-items: center;
+
+      ion-icon {
+        font-size: 30px;
+        color: $secondary;
+      }
+    }
+
+    .info-box-card-title {
+      color: $secondary;
+    }
+
+    .info-box-numbers {
+      font-size: 1rem;
+      color: $secondary;
+    }
+
+    .progressbar {
+      height: 10px;
+      position: relative;
+      background: $secondary;
+      border-radius: 3px;
+      border: 2px solid $secondary;
+      padding: 0;
+      margin-top: 10px;
+
+    }
+
+    .progressbar>span {
+      display: block;
+      height: 100%;
+      background-color: $preventionClr;
+      position: relative;
+      overflow: hidden;
+      border-radius: 3px;
+    }
+
+    .info-box-card-text {
+      margin-top: 10px;
+      font-size: 0.7rem;
+      color: $secondary;
+    }
+  }
+
+  .info-box-danger {
+    position: relative;
+    background: $dangerClr;
+    padding: 30px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 10px;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+
+    &:hover {
+      background: $secondary;
+
+      .info-box-card-title {
+        color: $dangerClr;
+      }
+
+      .info-box-icon ion-icon {
+        color: $dangerClr;
+      }
+
+      .info-box-numbers {
+        color: $dangerClr;
+      }
+
+      .progressbar {
+        background: $dangerClr;
+        border: 2px solid $dangerClr;
+      }
+
+      .progressbar>span {
+        background-color: $secondary;
+      }
+
+      .info-box-card-text {
+        color: $dangerClr;
+      }
+    }
+    .info-box-icon {
+      justify-content: center;
+      align-items: center;
+
+      ion-icon {
+        font-size: 30px;
+        color: $secondary;
+      }
+    }
+
+    .info-box-card-title {
+      color: $secondary;
+    }
+
+    .info-box-numbers {
+      font-size: 1rem;
+      color: $secondary;
+    }
+
+    .progressbar {
+      height: 10px;
+      position: relative;
+      background: $secondary;
+      border-radius: 3px;
+      border: 2px solid $secondary;
+      padding: 0;
+      margin-top: 10px;
+
+    }
+
+    .progressbar>span {
+      display: block;
+      height: 100%;
+      background-color: $dangerClr;
+      position: relative;
+      overflow: hidden;
+      border-radius: 3px;
+    }
+
+    .info-box-card-text {
+      margin-top: 10px;
+      font-size: 0.7rem;
+      color: $secondary;
+    }
+  }
+
+
+}
+
+// .main.active .info-box-icon {
+//   width: 50%;
+// }
+
+@media (max-width: 991px) {
+  .info-box-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 480px) {
+  .info-box-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .info-box-numbers {
+    font-size: 2.5rem !important;
+
+  }
+
+}

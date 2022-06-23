@@ -1,0 +1,247 @@
+/* Sidebar */
+.navigation-second {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  background: $main-second;
+  border-left: 10px solid $main-second;
+  transition: .5s;
+  overflow: hidden;
+}
+.navigation-second.active {
+  width: 80px;
+}
+.navigation-second ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.navigation-second ul li {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+
+}
+.navigation-second ul li:hover,
+.navigation-second ul li.hovered  {
+  background: $secondary;
+  // border: 5px solid $border-second;
+  // border-right: none;
+
+}
+.navigation-second ul li:nth-child(1) {
+  margin-bottom: 40px;
+  pointer-events: none;
+}
+.navigation-second ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: $secondary;
+}
+.navigation-second ul li:hover a,
+.navigation-second ul li.hovered a {
+  color: $main-second;
+}
+.icon-second {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 70px;
+  text-align: center;
+}
+.icon-second ion-icon {
+  font-size: 1.75rem;
+}
+.navigation-second ul li a .title {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  height: 60px;
+  line-height: 60px;
+  text-align: start;
+  white-space: nowrap;
+}
+/* скошенные углы */
+.navigation-second ul li:hover a::before,
+.navigation-second ul li.hovered a::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: -50px;
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  background: transparent ;
+  box-shadow: 35px 35px 0 10px $secondary;
+
+}
+.navigation-second ul li:hover a::after,
+.navigation-second ul li.hovered a::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  background: transparent;
+  box-shadow: 35px -35px 0 10px $secondary;
+}
+
+/* Navbar */
+.main-second {
+  position: absolute;
+  width: calc(100% - 300px);
+  left: 300px;
+  min-height: 100vh;
+  background: $secondary;
+  transition: .5s;
+}
+.main-second.active {
+  width: calc(100% - 80px);
+  left: 80px;
+}
+.topbar-second {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  z-index: 1000;
+}
+.toggle-second {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+.search-second {
+  position: relative;
+  width: 400px;
+  margin: 0 10px;
+}
+.search-second label {
+  position: relative;
+  width: 100%;
+}
+.search-second label input {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  padding: 5px 20px;
+  padding-left: 35px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid $black2;
+}
+.search-second label ion-icon {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  font-size: 1.2em;
+}
+.user-second {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.user-second img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+// Responsive
+
+
+@media (max-width: 991px) {
+  .navigation-second {
+    left: -300px;
+  }
+  .navigation-second.active {
+    left: 0px;
+    width: 300px;
+  }
+  .main-second {
+    width: 100%;
+    left: 0;
+  }
+  .main-second.active {
+    left: 300px;
+  }
+  .cardBox {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (max-width: 768px) {
+  .details {
+    grid-template-columns: repeat(1,1fr);
+  }
+  .recentOrders {
+    overflow-x: auto;
+  }
+  .status.inProgress  {
+    white-space: nowrap;
+  }
+}
+@media (max-width: 480px) {
+  .navigation-second {
+    width: 100%;
+    left: -100%;
+    z-index: 1000;
+  }
+  .navigation-second.active {
+    width: 100%;
+    left: 0;
+  }
+  .toggle-second {
+    z-index: 1001;
+  }
+  .main-second.active .toggle-second {
+    position: fixed;
+    right: 0;
+    left: initial;
+    color: var(--white);
+  }
+  .details table {
+    margin-top: 50px;
+  }
+  .details table tr td {
+    padding: 5px;
+    padding-bottom: 20px;
+    font-size: 12px;
+  }
+  .btn {
+   font-size: 10px;
+   padding: 3px 6px;
+  }
+  .cardBox {
+    grid-template-columns: repeat(1,1fr);
+  }
+  .cardHeader {
+    font-size: 20px;
+  }
+  .user-second {
+    min-width: 40px;
+    min-height: 40px;
+  }
+}

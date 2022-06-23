@@ -1,0 +1,110 @@
+.small-box-title {
+  width: 100%;
+  color: $primary;
+  font-weight: 500;
+  padding-left: 30px;
+}
+
+.small-box-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+
+
+
+  .small-box-main {
+    position: relative;
+    background: $primary;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+
+    &:hover {
+      .small-box-icon {
+
+        ion-icon {
+          font-size: 90px;
+        }
+      }
+
+
+
+    }
+    .small-box-content {
+      position: absolute;
+      left: 30px;
+      top: 10px;
+
+      .small-box-numbers {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $secondary;
+      }
+      .small-box-card-title {
+        color: $secondary;
+      }
+    }
+
+    .small-box-icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      justify-content: center;
+      align-items: center;
+
+
+      ion-icon {
+        font-size: 80px;
+        color: $black2;
+        // transition: .5s linear;
+      }
+    }
+
+  }
+
+
+
+
+
+}
+
+// .main.active .small-box-icon {
+//   width: 50%;
+// }
+
+@media (max-width: 991px) {
+  .small-box-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 768px) {
+  .small-box-main {
+    grid-template-columns: 1fr 1fr !important;
+    grid-gap: 40px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .small-box-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .small-box-main {
+    grid-template-columns: 1fr 1fr !important;
+    grid-gap: 40px !important;
+  }
+
+
+  .small-box-numbers {
+    font-size: 2.5rem !important;
+
+  }
+
+}
