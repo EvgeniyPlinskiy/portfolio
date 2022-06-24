@@ -55,15 +55,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_images_team_3_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../assets/images/team-3.jpg */ "./resources/js/assets/images/team-3.jpg");
 
 
-var _hoisted_1 = {
-  "class": "form-box"
-};
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"form-card\"><div class=\"form-card-img\"><img src=\"" + _assets_images_team_3_jpg__WEBPACK_IMPORTED_MODULE_1__["default"] + "\" alt=\"\"></div><div class=\"form-card-content\"><div class=\"form-card-details\"><h2>Maria Italy<br><span>Senior UX/UI designer</span></h2><div class=\"form-card-data\"><h3>342<br><span>Posts</span></h3><h3>118<br><span>Followers</span></h3><h3>235<br><span>Following</span></h3></div><div class=\"form-card-btn\"><button>Follow</button><button>Message</button></div></div></div></div>", 1);
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"info-box-title\"><h3>Personal card</h3></div><div class=\"form-box\"><div class=\"form-card\"><div class=\"form-card-img\"><img src=\"" + _assets_images_team_3_jpg__WEBPACK_IMPORTED_MODULE_1__["default"] + "\" alt=\"\"></div><div class=\"form-card-content\"><div class=\"form-card-details\"><h2>Maria Italy<br><span>Senior UX/UI designer</span></h2><div class=\"form-card-data\"><h3>342<br><span>Posts</span></h3><h3>118<br><span>Followers</span></h3><h3>235<br><span>Following</span></h3></div><div class=\"form-card-btn\"><button>Follow</button><button>Message</button></div></div></div></div></div>", 2);
 
-var _hoisted_3 = [_hoisted_2];
 function render(_ctx, _cache) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, _hoisted_3);
+  return _hoisted_1;
 }
 
 /***/ }),

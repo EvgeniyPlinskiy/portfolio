@@ -32,9 +32,9 @@ class MenuSeeder extends Seeder
             'route' => '/forms',
         ]);
         $menu = Menu::firstOrCreate([
-            'title' => 'Help',
-            'icon' => 'help-outline',
-            'route' => '/new',
+            'title' => 'Sliders',
+            'icon' => 'images-outline',
+            'route' => '/sliders',
         ]);
         $menu = Menu::firstOrCreate([
             'title' => 'Settings',

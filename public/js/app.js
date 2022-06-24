@@ -16034,10 +16034,13 @@ var routes = [{
     return __webpack_require__.e(/*! import() */ "resources_js_components_forms_Forms_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/forms/Forms.vue */ "./resources/js/components/forms/Forms.vue"));
   }
 }, {
-  path: '/new',
-  name: 'create',
+  path: '/sliders',
+  name: 'sliders',
+  meta: {
+    layout: 'MainLayout'
+  },
   component: function component() {
-    return __webpack_require__.e(/*! import() */ "resources_js_components_main_Index_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/main/Index.vue */ "./resources/js/components/main/Index.vue"));
+    return __webpack_require__.e(/*! import() */ "resources_js_components_sliders_Sliders_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/sliders/Sliders.vue */ "./resources/js/components/sliders/Sliders.vue"));
   }
 }, {
   path: '/:pathMatch(.*)*',
@@ -45349,7 +45352,7 @@ var index = {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_components_main_Index_vue":1,"resources_js_components_widgets_Widgets_vue":1,"resources_js_components_forms_Forms_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_components_main_Index_vue":1,"resources_js_components_widgets_Widgets_vue":1,"resources_js_components_forms_Forms_vue":1,"resources_js_components_sliders_Sliders_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
@@ -45541,6 +45544,11 @@ var index = {
 /******/ 		var chunkLoadingGlobal = self["webpackChunk"] = self["webpackChunk"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/nonce */
+/******/ 	(() => {
+/******/ 		__webpack_require__.nc = undefined;
 /******/ 	})();
 /******/ 	
 /************************************************************************/

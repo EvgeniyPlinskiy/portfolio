@@ -22,9 +22,10 @@ const routes = [
     component: () => import('../components/forms/Forms.vue')
   },
   {
-    path: '/new',
-    name: 'create',
-    component: () => import('../components/main/Index.vue')
+    path: '/sliders',
+    name: 'sliders',
+    meta: {layout: 'MainLayout'},
+    component: () => import('../components/sliders/Sliders.vue')
   },
   {
     path: '/:pathMatch(.*)*',

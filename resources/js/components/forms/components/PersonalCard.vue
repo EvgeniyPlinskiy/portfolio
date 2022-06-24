@@ -1,4 +1,7 @@
 <template>
+<div class="info-box-title">
+    <h3>Personal card</h3>
+  </div>
   <div class="form-box">
     <div class="form-card">
       <div class="form-card-img">
