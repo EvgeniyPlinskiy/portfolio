@@ -1,0 +1,42 @@
+.check-box {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  // grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+
+  input[type="checkbox"] {
+     width: 80px;
+     height: 40px;
+     -webkit-appearance: none;
+     background: $black2;
+     outline: none;
+     border-radius: 20px;
+     box-shadow: inset 0 0 5px rgba(0, 0, 0, .5);
+     transition: .5s;
+
+     &:checked {
+      background: $primary;
+     }
+
+     &::before {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      top: 20px;
+      left: 20px;
+      background: $secondary;
+      transform: scale(1.1);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, .8);
+      transition: .5s;
+     }
+     &:checked::before {
+      left: 60px;
+     }
+  }
+
+
+}
